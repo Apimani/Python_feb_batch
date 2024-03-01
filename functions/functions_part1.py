@@ -59,6 +59,10 @@ calculator(4,-3)
 calculator(100,2)
 
 
+calculator(14,2)
+
+
+
 
 
 
