@@ -1,0 +1,24 @@
+2024-03-07 07:56:03,651 - INFO - info
+2024-03-07 07:56:03,651 - WARNING - warn
+2024-03-07 07:56:03,651 - ERROR - error
+2024-03-07 07:56:03,651 - CRITICAL - critical
+2024-03-07 07:56:29,935 - INFO - info
+2024-03-07 07:56:29,935 - WARNING - warn
+2024-03-07 07:56:29,935 - ERROR - error
+2024-03-07 07:56:29,935 - CRITICAL - critical
+2024-03-07 07:56:37,489 - INFO - info
+2024-03-07 07:56:37,489 - WARNING - warn
+2024-03-07 07:56:37,489 - ERROR - error
+2024-03-07 07:56:37,489 - CRITICAL - critical
+2024-03-07 07:59:23,100 - INFO - info - root
+2024-03-07 07:59:23,100 - WARNING - warn - root
+2024-03-07 07:59:23,100 - ERROR - error - root
+2024-03-07 07:59:23,100 - CRITICAL - critical - root
+2024-03-07 07:59:38,699 - INFO - info - root-<module>
+2024-03-07 07:59:38,701 - WARNING - warn - root-<module>
+2024-03-07 07:59:38,701 - ERROR - error - root-<module>
+2024-03-07 07:59:38,701 - CRITICAL - critical - root-<module>
+2024-03-07 07:59:58,780 - INFO - info - root-<module>-19
+2024-03-07 07:59:58,780 - WARNING - warn - root-<module>-20
+2024-03-07 07:59:58,780 - ERROR - error - root-<module>-21
+2024-03-07 07:59:58,780 - CRITICAL - critical - root-<module>-22
