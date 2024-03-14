@@ -76,17 +76,14 @@ class Student:
 
 obj = Student('test3',2)
 
-obj.student_dis()
-
-obj.student_dis()
-obj.student_dis()
-obj.student_dis()
+obj.student_dis('test')
 
 
 
 
 
-def student_dis( name):
+
+def student_dis(name):
     print("Name of the student", name)
 
 
