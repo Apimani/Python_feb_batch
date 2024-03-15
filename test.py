@@ -1,51 +1,53 @@
-import random
-import faker
+class College:
+    # Class attribute
+    location = "City University"
 
-# Initialize Faker to generate realistic fake data
-fake = faker.Faker()
+    # Constructor method (initializer)
+    def __init__(self, name):
+        # Instance attributes
+        self.name = name
+        self.students = []
 
+    # Instance method to enroll a student
+    def enroll_student(self, student):
+        self.students.append(student)
+        return f"{student.name} has been enrolled in {self.name}"
 
-def generate_test_data(num_records):
-    """
-    Generate test data for ETL pipeline.
-
-    Args:
-    - num_records: Number of records to generate
-
-    Returns:
-    - List of dictionaries representing test data
-    """
-    test_data = []
-    for _ in range(num_records):
-        positive_negative = random.choice(['positive', 'negative'])
-        if positive_negative == 'positive':
-            record = {
-                'id': random.randint(1000, 9999),  # Generate random 4-digit number for ID
-                'name': fake.name(),  # Valid name
-                'address': fake.address(),  # Valid address
-                'phone_num': fake.phone_number(),  # Valid phone number
-                'label': positive_negative
-            }
-        else:
-            record = {
-                'id': random.randint(1000, 9999),  # Generate random 4-digit number for ID
-                'name': '',  # Invalid or missing name
-                'address': fake.address(),  # Valid address
-                'phone_num': '',  # Invalid or missing phone number
-                'label': positive_negative
-            }
-        test_data.append(record)
-    return test_data
+    # Instance method to get the total number of students
+    def total_students(self):
+        return len(self.students)
 
 
-def main():
-    num_records = 100  # Number of test records to generate
-    test_data = generate_test_data(num_records)
+class Student:
+    # Constructor method (initializer)
+    def __init__(self, name, age, major):
+        # Instance attributes
+        self.name = name
+        self.age = age
+        self.major = major
 
-    # Print the generated test data
-    for record in test_data:
-        print(record)
+    # Instance method to display student details
+    def display_details(self):
+        return f"Name: {self.name}, Age: {self.age}, Major: {self.major}"
 
 
-if __name__ == "__main__":
-    main()
+# Creating an instance of the College class
+college = College("Engineering College")
+
+# Creating instances of the Student class
+student1 = Student("Alice", 20, "Computer Science")
+student2 = Student("Bob", 21, "Electrical Engineering")
+
+# Enrolling students to the college
+print(college.enroll_student(student1))  # Output: Alice has been enrolled in Engineering College
+print(college.enroll_student(student2))  # Output: Bob has been enrolled in Engineering College
+
+# Getting the total number of students in the college
+print(college.total_students())  # Output: 2
+
+# Displaying student details
+print(student1.display_details())  # Output: Name: Alice, Age: 20, Major: Computer Science
+print(student2.display_details())  # Output: Name: Bob, Age: 21, Major: Electrical Engineering
+
+# Accessing class attribute
+print(college.location)  # Output: City University
