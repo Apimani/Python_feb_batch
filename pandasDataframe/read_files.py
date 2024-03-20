@@ -21,6 +21,7 @@ help(pd.read_parquet)
 
 df = pd.read_parquet(r"C:\Users\A4952\PycharmProjects\pythonProject\source_files\userdata1.parquet")
 
+
 # print(df.shape)
 print(df)
 
