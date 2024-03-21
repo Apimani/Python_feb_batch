@@ -2,9 +2,10 @@
 1,Kattubadi,Sreenivasulu,199801,1000,A
 2,Hari,Prasad,199502,2000,B
 3,Kattubadi,Ram,199203,4500,B
-4,Raheem,Ahammed,198904,6000,C
+4,Raheem,Ahammed,,6000,C
 5,mahesh,Kumar,198605,1000,D
-6,Hari,Somanath,198306,2000,A
+6,Hari,,198306,2000,A
 7,Kattubadi,Ramesh,198007,4500,A
 8,Ranganath,V,197708,6000,E
+9,Bhole,Hamad,197409,3000,F
 9,Bhole,Hamad,197409,3000,F

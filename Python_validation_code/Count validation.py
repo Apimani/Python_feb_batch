@@ -10,8 +10,7 @@ from datetime import datetime
 dsn_tns_cvp = cx_Oracle.makedsn(Cvp_Host_name, Cvp_Port, service_name=Cvp_Service_name) #if needed, place an 'r' before any parameter in order to address any special character such as '\'.
 conn_cvp = cx_Oracle.connect(user=Cvp_User_name, password=Cvp_Password, dsn=dsn_tns_cvp) #if needed, place an 'r' before any parameter in order to address any special character such as '\'. For example, if your user name contains '\', you'll need to place 'r' before the user name: user=r'User Name'
 curs_cvp = conn_cvp.cursor()
-query=r'''select distinct table_name from all_tab_cols where  owner='FEDX_LSP' and  column_name not like 'SYS%'
-and table_name  in ('TRN_SUSPENSE','TRN_DETAIL')'''
+query=r'''select distinct table_name from all_tab_cols where  owner='ABC''''
 curs_cvp.execute(query)
 columns=[desc[0] for desc in curs_cvp.description]
 data=curs_cvp.fetchall()

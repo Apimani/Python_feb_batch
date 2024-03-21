@@ -82,8 +82,7 @@ df8 = pd.read_csv(r"/Users/harish/PycharmProjects/pythonProject/source_files/Con
 profile = ProfileReport(df8)
 #print(profile.to_notebook_iframe())
 
-import os
-print(os.getcwd())
+
 
 profile.to_html()
 
