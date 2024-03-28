@@ -35,7 +35,7 @@ df2.printSchema()
 
 schema = ['language' , 'fee']
 
-schema3 = StructType([StructField("id",IntegerType(),nullable=False),
+schema3 = StructType([StructField("id",StringType(),nullable=False),
                      StructField("name", StringType(), nullable=True),
                      StructField('age',IntegerType(),nullable=False)
                      ])
@@ -43,7 +43,11 @@ schema3 = StructType([StructField("id",IntegerType(),nullable=False),
 dataList3 = [("Java", 20000,21), ("Python", 100000,22), ("Scala", 3000,23)]
 df3 = spark.createDataFrame(dataList3, schema3)
 
+df3.display()
+
 df3.show()
+
+print(df3.schema.json())
 
 
 
