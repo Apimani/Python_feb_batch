@@ -49,6 +49,8 @@ df3.show()
 
 print(df3.schema.json())
 
+df.collect()
+
 
 
 
