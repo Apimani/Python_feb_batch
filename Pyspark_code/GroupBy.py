@@ -1,5 +1,5 @@
 # Databricks notebook source
-select c1,c2, sum(c1) from tn where group by c1,c2 having order by
+#select c1,c2, sum(c1) from tn where group by c1,c2 having order by
 
 # COMMAND ----------
 
