@@ -13,6 +13,9 @@ print(df)
 print(df2)
 print(df)
 
+pd.read_excel()
+
+
 print(df.shape)
 
 help(pd.read_parquet)

@@ -5,9 +5,9 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <content url="file://$MODULE_DIR$/../../spark-3.3.4-bin-hadoop3/spark-3.3.4-bin-hadoop3/python" />
-    <content url="jar://$MODULE_DIR$/../../spark-3.3.4-bin-hadoop3/spark-3.3.4-bin-hadoop3/python/lib/py4j-0.10.9.5-src.zip!/" />
-    <orderEntry type="jdk" jdkName="Python 3.10 (Python_feb_batch)" jdkType="Python SDK" />
+    <content url="file://$USER_HOME$/spark-3.3.4-bin-hadoop3/spark-3.3.4-bin-hadoop3/python" />
+    <content url="jar://$USER_HOME$/spark-3.3.4-bin-hadoop3/spark-3.3.4-bin-hadoop3/python/lib/py4j-0.10.9.5-src.zip!/" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (feb_data_automation_project)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
